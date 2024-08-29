@@ -1,0 +1,79 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.swagger-ui .scheme-container {
+  background-color:#000 !important;
+}
+
+
+.EasyMDEContainer .CodeMirror{
+  height:90vh !important;
+}
+
+.EasyMDEContainer{
+  
+  
+  display:flex-col !important;
+  justify-content:end !important;
+  
+}
+
+.editor{
+  display:flex;
+  justify-content:flex-end;
+  height:full;
+  
+}
+
+.editor-toolbar {
+  background:black !important;
+  border-color:grey !important;
+}
+.editor-toolbar button:hover {
+  background:#303030 !important;
+  
+}
+.editor-toolbar button:active {
+  background:#303030 !important;
+  
+  
+}
+
+.EasyMDEContainer .CodeMirror {
+  background:black;
+  color:white;
+  border-color:grey !important;
+}
